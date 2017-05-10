@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>MUSIC PLAYER</title>
+        <link rel="stylesheet" href="css/iconfont/iconfont.css">
+        <link rel="stylesheet" href="css/slider_style.css">
+        <link rel="stylesheet" href="css/main.css">
+        <style media="screen">
+            .backgroundImage {
+                background-image: url("cover/bang bang boom boom.jpg");
+                background-size: cover;
+                background-position: center;
+            }
+        </style>
+        <style class="rotateStyle">
+        </style>
+    </head>
+    <body>
+        <div class="main-container" data-toggle="off" data-playing="false">
+            <section class="section-head">
+                <audio class="control-source" src="playlist/Beth Hart - Bang Bang Boom Boom.mp3" data-style="orderPlay" data-path="Beth Hart - Bang Bang Boom Boom.mp3"></audio>
+                <div class="model-background backgroundImage rotate">
+                    <!-- <img class="vertical-center bgImg" src="cover/bang bang boom boom.jpg" alt="cover"> -->
+                </div>
+                <div class="control-button" data-toggle="off">
+                    <i class="control-button-play iconfont icon-play"></i>
+                    <i class="control-button-pause iconfont icon-zanting hide"></i>
+                </div>
+                <div class="control-button-style">
+                    <i class="control-button-loop sign iconfont icon-zhengchangfangxiangxunhuanbofang"></i>
+                    <i class="control-button-random iconfont icon-suijibofangzhongzuo"></i>
+                    <i class="control-button-single iconfont icon-danquxunhuan"></i>
+                </div>
+                <div class="model-control">
+                    <div class="control-detail">
+                        <span class="control-detail-song">Bang Bang Boom Boom</span>
+                        <span class="control-detail-musician">- Beth Hart</span>
+                    </div>
+                    <div class="control-progress-bar">
+                        <span class="control-detail-currentTime">00:00</span>
+                        <div class="control-progress">
+                            <input class="control-progress-range" type="range" min="0" max="1000" step="1" value="0">
+                        </div>
+                        <span class="control-detail-duration">03:35</span>
+                    </div>
+                </div>
+            </section>
+            <section class="section-playlist">
+                <div class="cell-music" data-path="Beth Hart - Bang Bang Boom Boom.mp3">
+                    <div class="model-cover-small">
+                        <img src="cover/bang bang boom boom.jpg" alt="cover">
+                    </div>
+                    <div class="model-music-detail vertical-center">
+                        <p class="detail-song">Bang Bang Boom Boom</p>
+                        <p class="detail-musician">Beth Hart</p>
+                        <p class="detail-duration">03:35</p>
+                    </div>
+                </div>
+                <div class="cell-music" data-path="Ella Eyre - Don't Follow Me.mp3">
+                    <div class="model-cover-small">
+                        <img src="cover/Don't Follow Me.jpg" alt="cover">
+                    </div>
+                    <div class="model-music-detail vertical-center">
+                        <p class="detail-song">Don't Follow Me</p>
+                        <p class="detail-musician">Ella Eyre</p>
+                        <p class="detail-duration">03:29</p>
+                    </div>
+                </div>
+                <div class="cell-music" data-path="Halsey - Ghost (1 Mic 1 Take).mp3">
+                    <div class="model-cover-small">
+                        <img src="cover/Ghost (1 Mic 1 Take).png" alt="cover">
+                    </div>
+                    <div class="model-music-detail vertical-center">
+                        <p class="detail-song">Ghost (1 Mic 1 Take)</p>
+                        <p class="detail-musician">Halsey</p>
+                        <p class="detail-duration">02:40</p>
+                    </div>
+                </div>
+                <div class="cell-music" data-path="Anthony Hamilton,Elayna Boynton - Freedom.mp3">
+                    <div class="model-cover-small">
+                        <img src="cover/Freedom.jpg" alt="cover">
+                    </div>
+                    <div class="model-music-detail vertical-center">
+                        <p class="detail-song">Freedom</p>
+                        <p class="detail-musician">Anthony Hamilton</p>
+                        <p class="detail-duration">03:43</p>
+                    </div>
+                </div>
+                <div class="cell-music" data-path="Barns Courtney - Glitter and Gold.mp3">
+                    <div class="model-cover-small">
+                        <img src="cover/Glitter and Gold.jpg" alt="cover">
+                    </div>
+                    <div class="model-music-detail vertical-center">
+                        <p class="detail-song">Glitter and Gold</p>
+                        <p class="detail-musician">Barns Courtney</p>
+                        <p class="detail-duration">02:59</p>
+                    </div>
+                </div>
+            </section>
+            <div class="control-button-select">
+                <i class="control-button-prev iconfont icon-icon120"></i>
+                <i class="control-button-next iconfont icon-icon121"></i>
+            </div>
+        </div>
+
+        <script src="js/main.js"></script>
+    </body>
+</html>
